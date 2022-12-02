@@ -1,6 +1,6 @@
 def topThreeElves():
     calsums = []
-    with open("day1-1.dat", "r") as f:
+    with open("day1.dat", "r") as f:
         currsum = 0
         lines = f.readlines()
 

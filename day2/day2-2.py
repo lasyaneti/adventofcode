@@ -3,7 +3,7 @@ def rckPprSci():
     # +0 X loss, +3 Y draw, +6 Z win
     # +1 rock, +2 paper, +3 scissors 
     score = 0
-    with open("day2-1.dat", "r") as f:
+    with open("day2.dat", "r") as f:
         lines = f.readlines()
         for line in lines:
             if ("A" in line):
