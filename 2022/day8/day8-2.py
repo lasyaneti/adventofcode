@@ -1,6 +1,4 @@
 def highestScenicScore():
-    # all trees in border are visible
-    # find trees visible in interior from ANY direction? 
     with open("day8.dat", "r") as f:
         lines = f.readlines()
         maxScore = 0
