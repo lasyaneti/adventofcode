@@ -54,7 +54,7 @@ def highestScenicScore():
                     tempi += 1
             
                 if topScore * downScore * leftScore * rightScore > maxScore:
-                    maxScore =  topScore * downScore * leftScore * rightScore
+                    maxScore = topScore * downScore * leftScore * rightScore
 
         return maxScore
 
