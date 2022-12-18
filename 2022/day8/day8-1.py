@@ -1,6 +1,6 @@
 def treesVisible():
     # all trees in border are visible
-    # find trees visible in interior from ANY direction? 
+    # find trees visible in interior from left right top down directions
     with open("day8.dat", "r") as f:
         lines = f.readlines()
         visibility = []
