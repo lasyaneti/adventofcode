@@ -10,7 +10,7 @@ def headTail():
     for line in lines:
         line = line.rstrip()
 
-        for i in range(int(line[1:])):
+        for i in range(int(line[2:])):
 
             # move head one step at a time
             if line[0] == "R":
@@ -23,16 +23,16 @@ def headTail():
                 h = (h[0], h[1] - 1)
 
             # update t if needed
-            while abs(h[0] - t[0]) > 1 or abs(h[1] - t[1] > 1):
-                # move horizontally, already in same row
-                if (h[0] == t[0]):
+            while abs(h[0] - t[0]) > 1 or abs(h[1] - t[1]) > 1:
+                # move vertically, already in same row
+                if (h[0] == t[0] and h[1] != t[1]):
                     if (h[1] > t[1]):
                         t = (t[0], t[1] + 1)
                     if (t[1] > h[1]):
                         t = (t[0], t[1] - 1)
 
-                # move vertically, already in same col
-                elif (h[1] == t[1]):
+                # move horizontally, already in same col
+                elif (h[0] != t[0] and h[1] == t[1]):
                     if (h[0] > t[0]):
                         t = (t[0] + 1, t[1])
                     if (t[0] > h[0]):
